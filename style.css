@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: blue;
+    height: 100px;
+    position: relative;
+
+}
+.inandBu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h5{
+    color: white;
+    position: relative;
+    margin-left: 50px ;
+   top: 15px;
+
+
+
+}
+.header input{
+    width: 30%;
+    margin-right: 10px;
+
+} 
+.header button{
+    background-color: white;
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 3px;
+
+
+}
+.header .active {
+    position: absolute;
+    right: -100px; /* Start off-screen */
+    bottom: 20px;
+    transition: transform 0.5s ease; /* Make the animation last 2 seconds */
+    transform: translateX(0); /* Initial position */
+    opacity: 0;
+    visibility: hidden; /* Initially hidden */
+}
+
+.header .active.show {
+    transform: translateX(-130px); /* Move left into view */
+    opacity: 1;
+    visibility: visible; /* Show the div */
+}
+.header .active.dele {
+    transform: translateX(-130px); /* Move left into view */
+    opacity: 1;
+    visibility: visible; /* Show the div */
+}
+.nextcontainer{
+position: relative;
+top: 20px;
+  
+    width: 50%;
+    margin: auto;
+
+}
+.nextcontainer .to_do_item{
+    background-color:green;
+
+    border-radius: 3px;
+    display: flex;
+    border: 2px solid green ;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 10px;
+    
+
+
+
+ 
+
+    
+
+
+
+}
+.nextcontainer .to_do_item   .fa-trash{
+    position:absolute;
+    right: 100px;
+
+}
+.nextcontainer .to_do_item   .fa-check{
+    
+        position:absolute;
+        right: 130px;
+
+}
+.nextcontainer .to_do_item .text {
+
+   position: relative;
+   left: 30px;
+}
+.nextcontainer .to_do_item   .fa-rotate-left{
+    
+    position:absolute;
+    right: 130px;
+
+}
+
